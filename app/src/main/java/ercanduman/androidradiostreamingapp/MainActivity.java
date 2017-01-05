@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AudioManager.OnAudioFocusChangeListener {
 
     private ProgressDialog dialog;
     private static Context context;
@@ -51,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
         player = new MediaPlayer();
         audioManager = (AudioManager) context.getSystemService(context.AUDIO_SERVICE);
         btnPlay = (ImageButton) findViewById(R.id.btnPlayPause);
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startRadio();
+            }
+        });
         btnPlay.setImageResource(android.R.drawable.ic_media_play);
 
         seekBarStuff();
@@ -79,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Pressing play button
-    public void startRadio(View view) {
+    public void startRadio() {
         if (CheckNetwork.isNetwrokAvailable(context)) {
             dialog.show();
             if (!isPlaying) {
@@ -95,6 +101,16 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(context, context.getString(R.string.no_internet), Toast.LENGTH_SHORT).show();
             return;
         }
+    }
+
+    private void stopRadio() {
+        isPlaying = false;
+        if (dialog != null) dialog.dismiss();
+        if (player != null && player.isPlaying()) {
+            player.stop();
+            player.reset();
+        }
+        btnPlay.setImageResource(android.R.drawable.ic_media_play);
     }
 
     private void playMusic() {
@@ -147,16 +163,6 @@ public class MainActivity extends AppCompatActivity {
         if (dialog != null && dialog.isShowing()) dialog.dismiss();
     }
 
-    private void stopRadio() {
-        isPlaying = false;
-        if (dialog != null) dialog.dismiss();
-        if (player != null && player.isPlaying()) {
-            player.stop();
-            player.reset();
-        }
-        btnPlay.setImageResource(android.R.drawable.ic_media_play);
-    }
-
     public void getMoreApps(View view) {
         try {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=ercanduman")));
@@ -175,5 +181,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void goGithub(View view) {
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ercanduman")));
+    }
+
+    // check if any phone call receives, if so, stop music
+    @Override
+    public void onAudioFocusChange(int focusChange) {
+        if (focusChange <= 0) {
+            //LOSS -> pause
+            stopRadio();
+        } else {
+            // GAIN -> play
+            startRadio();
+        }
     }
 }

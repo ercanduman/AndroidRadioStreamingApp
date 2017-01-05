@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidRadioStreaming.iml" filepath="$PROJECT_DIR$/AndroidRadioStreaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidRadioStreamingApp.iml" filepath="$PROJECT_DIR$/AndroidRadioStreamingApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
