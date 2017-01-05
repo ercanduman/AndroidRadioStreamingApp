@@ -16,6 +16,8 @@ And seekbar listens device volume button's events, when volume down pressed the 
 
 This app plays stream urls from the internet, with this basic idea, if you like, you can add more radio stations...
 
+You can try/test it with this apk file [ here](https://www.dropbox.com/s/r9y0597vkhk9k3w/Android%20Radio%20Streaming%20App%20by%20ercanduman.zip?dl=0)
+
 Hope it helps someone :+1: :) If you want to see some real project I have created with android radio streaming, 
 please have a look on my android [RadiOom ]( https://play.google.com/store/apps/details?id=ercanduman.radioom&hl=en) application.
 
