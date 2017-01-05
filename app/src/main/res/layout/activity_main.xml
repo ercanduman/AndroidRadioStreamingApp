@@ -7,9 +7,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ercanduman.androidradiostreamingapp.MainActivity">
-
 
     <ImageButton
         android:id="@+id/btnPlayPause"
@@ -25,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnPlayPause"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"/>
+        android:layout_marginTop="25dp"/>
 
     <TextView
         android:id="@+id/textView"
@@ -33,8 +31,42 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="26dp"
         android:gravity="center"
-        android:text="@string/by_ercan_duman"
+        android:onClick="goGithub"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="getMoreApps"
+            android:text="Get more apps!"
+            android:textColor="#000"/>
+
+        <ImageButton
+            android:id="@+id/btnPlayStore"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/more_on_play_store"
+            android:onClick="getMoreApps"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_get_it_on_play_store"
+            android:onClick="getItOnGooglePlay"/>
+
+    </RelativeLayout>
+
 </RelativeLayout>

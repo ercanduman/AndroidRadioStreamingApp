@@ -3,5 +3,11 @@
     <string name="loading">"Checking the internet connection \nPlease wait..."</string>
     <string name="no_internet"> No internet connection! </string>
     <string name="stream_url">"http://media-sov.musicradio.com/CapitalMP3"</string>
-    <string name="by_ercan_duman">Android Streaming Radio App by Ercan Duman\nhttps://github.com/ercanduman</string>
+    <!--<string name="by_ercan_duman">Android Streaming Radio App by Ercan Duman\nhttps://github.com/ercanduman</string>-->
+    <string name="by_ercan_duman">
+        <![CDATA[
+         <string name="by_ercan_duman">Android Streaming Radio App by Ercan Duman
+            <br>
+         <font color="blue">https://github.com/ercanduman</font>
+        ]]></string>
 </resources>

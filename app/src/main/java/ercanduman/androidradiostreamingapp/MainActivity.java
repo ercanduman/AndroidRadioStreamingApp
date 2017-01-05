@@ -2,14 +2,18 @@ package ercanduman.androidradiostreamingapp;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -36,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         STREAM_URL = context.getResources().getString(R.string.stream_url);
 
+        TextView desc = (TextView) findViewById(R.id.textView);
+        desc.setText(Html.fromHtml(getString(R.string.by_ercan_duman)));
+
         dialog = new ProgressDialog(context);
         dialog.setMessage(context.getString(R.string.loading));
         dialog.setCancelable(true);
@@ -45,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         audioManager = (AudioManager) context.getSystemService(context.AUDIO_SERVICE);
         btnPlay = (ImageButton) findViewById(R.id.btnPlayPause);
         btnPlay.setImageResource(android.R.drawable.ic_media_play);
-
 
         seekBarStuff();
     }
@@ -133,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         stopRadio();
-
     }
 
     @Override
@@ -150,6 +155,25 @@ public class MainActivity extends AppCompatActivity {
             player.reset();
         }
         btnPlay.setImageResource(android.R.drawable.ic_media_play);
+    }
 
+    public void getMoreApps(View view) {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=ercanduman")));
+        } catch (android.content.ActivityNotFoundException anfe) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=ercanduman")));
+        }
+    }
+
+    public void getItOnGooglePlay(View view) {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=ercanduman.radioom")));
+        } catch (android.content.ActivityNotFoundException anfe) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=ercanduman.radioom")));
+        }
+    }
+
+    public void goGithub(View view) {
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ercanduman")));
     }
 }
