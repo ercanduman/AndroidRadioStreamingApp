@@ -49,22 +49,7 @@
             android:text="@string/get_more_apps"
             android:textColor="#000"/>
 
-        <ImageButton
-            android:id="@+id/btnPlayStore"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="18dp"
-            android:background="@drawable/more_on_play_store"
-            android:onClick="getMoreApps"/>
 
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/ic_get_it_on_play_store"
-            android:onClick="getItOnGooglePlay"/>
     </RelativeLayout>
 
 </RelativeLayout>

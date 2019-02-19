@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">Android Radio Streaming App</string>
+    <string name="app_name">dotWaves</string>
     <string name="loading">"Checking the internet connection \nPlease wait&#8230;"</string>
     <string name="no_internet"> No internet connection! </string>
-    <string name="stream_url">"http://media-sov.musicradio.com/CapitalMP3"</string>
-    <!--<string name="by_ercan_duman">Android Streaming Radio App by Ercan Duman\nhttps://github.com/ercanduman</string>-->
+    <string name="stream_url">"http://s7.voscast.com:10854"</string>
+    <!--<string name="by_ercan_duman">dotWaves by ecovaran\nhttps://github.com/droidworks</string>-->
     <string name="by_ercan_duman">
         <![CDATA[
-         <string name="by_ercan_duman">Android Streaming Radio App by Ercan Duman
+         <string name="by_ercan_duman">dotWaves by ecovaran
             <br>
-         <font color="blue">https://github.com/ercanduman</font>
+         <font color="blue">https://github.com/droidworks</font>
         ]]></string>
     <string name="get_more_apps">Get more apps!</string>
 </resources>
