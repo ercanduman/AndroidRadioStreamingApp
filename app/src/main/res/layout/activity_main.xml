@@ -51,7 +51,7 @@
         android:cropToPadding="false"
         android:scaleType="center"
         android:src="@mipmap/logo" />
-    
+
 
 
 </RelativeLayout>
