@@ -1,4 +1,4 @@
-package ercanduman.androidradiostreamingapp;
+package dotwaves.androidradiostreamingapp;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

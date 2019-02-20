@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">dotWaves</string>
-    <string name="loading">"Checking the internet connection \nPlease wait&#8230;"</string>
-    <string name="no_internet"> No internet connection! </string>
+    <string name="loading">"Loading dotWaves stream \nPlease wait&#8230;"</string>
+    <string name="no_internet"> Please check your internet connection! </string>
     <string name="stream_url">"http://s7.voscast.com:10854"</string>
     <!--<string name="by_ercan_duman">dotWaves by ecovaran\nhttps://github.com/droidworks</string>-->
     <string name="by_ercan_duman">

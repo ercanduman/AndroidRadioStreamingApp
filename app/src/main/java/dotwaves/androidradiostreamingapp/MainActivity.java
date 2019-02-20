@@ -1,4 +1,4 @@
-package ercanduman.androidradiostreamingapp;
+package dotwaves.androidradiostreamingapp;
 
 import android.app.ProgressDialog;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package ercanduman.androidradiostreamingapp;
+package dotwaves.androidradiostreamingapp;
 
 import org.junit.Test;
 
