@@ -51,12 +51,7 @@
         android:cropToPadding="false"
         android:scaleType="center"
         android:src="@mipmap/logo" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/black" />
+    
 
 
 </RelativeLayout>
