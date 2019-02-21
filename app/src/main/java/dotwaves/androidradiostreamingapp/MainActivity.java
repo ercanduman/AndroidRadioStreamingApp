@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements AudioManager.OnAu
 
     //Pressing play button
     public void startRadio() {
-        if (CheckNetwork.isNetwrokAvailable(context)) {
+        if (CheckNetwork.isNetworkAvailable(context)) {
             dialog.show();
             if (!isPlaying) {
                 btnPlay.setImageResource(android.R.drawable.ic_media_pause);

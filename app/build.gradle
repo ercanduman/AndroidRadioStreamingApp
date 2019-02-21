@@ -4,9 +4,9 @@ android {
     compileSdkVersion 23
 
     defaultConfig {
-        applicationId "ercanduman.androidradiostreamingapp"
+        applicationId "dotwaves.androidradiostreamingapp"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
