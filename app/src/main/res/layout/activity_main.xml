@@ -48,10 +48,14 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:cropToPadding="false"
-        android:scaleType="center"
-        android:src="@mipmap/logo" />
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:fadingEdge="horizontal|vertical"
+        app:srcCompat="@mipmap/iconasset23" />
 
 
 </RelativeLayout>
