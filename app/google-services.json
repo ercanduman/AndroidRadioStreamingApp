@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "799611197081",
+    "firebase_url": "https://androidradiostreamingapp.firebaseio.com",
+    "project_id": "androidradiostreamingapp",
+    "storage_bucket": "androidradiostreamingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799611197081:android:6b60881f77cfbd37",
+        "android_client_info": {
+          "package_name": "dotwaves.androidradiostreamingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799611197081-dbesau70n8mkj1a4qd1qkrevp9u8pj9m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dotwaves.androidradiostreamingapp",
+            "certificate_hash": "534d384711619e29bb9fb80c967d4d4fe6221ebf"
+          }
+        },
+        {
+          "client_id": "799611197081-pk8qt13kjhok85nj9kuajj5vhrappj0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkWyE2YPqFKuQH5VYVfCwF7N41F3Wzx6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799611197081-pk8qt13kjhok85nj9kuajj5vhrappj0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,6 +16,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//import dotwaves.androidradiostreamingapp.R;
+
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity implements AudioManager.OnAudioFocusChangeListener {
@@ -165,9 +167,9 @@ public class MainActivity extends AppCompatActivity implements AudioManager.OnAu
 
     public void getMoreApps(View view) {
         try {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=ercanduman")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=42.my")));
         } catch (android.content.ActivityNotFoundException anfe) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=ercanduman")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=42.my")));
         }
     }
 
