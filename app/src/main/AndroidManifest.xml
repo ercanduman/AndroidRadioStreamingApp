@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.dotwaves.androidradiostreamingapp"
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="dotwaves.androidradiostreamingapp"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -10,7 +11,8 @@
         android:icon="@mipmap/icon_dotxhdpi"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name="dotwaves.androidradiostreamingapp.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize">
