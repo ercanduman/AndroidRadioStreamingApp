@@ -175,14 +175,14 @@ public class MainActivity extends AppCompatActivity implements AudioManager.OnAu
 
     public void getItOnGooglePlay(View view) {
         try {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=ercanduman.radioom")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=42.my")));
         } catch (android.content.ActivityNotFoundException anfe) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=ercanduman.radioom")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=42.my")));
         }
     }
 
     public void goGithub(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ercanduman")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/droidworks")));
     }
 
     // check if any phone call receives, if so, stop music
