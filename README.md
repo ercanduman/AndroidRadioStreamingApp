@@ -1,5 +1,5 @@
 # dotWavesStreamingApp
-Android Radio Streaming App by eco.varan@42
+Android Radio Streaming App by linges@42
 
 This Radio application checks internet connection as well. If there is no connection, it shows some TOAST message such as:
 
