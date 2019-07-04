@@ -1,5 +1,5 @@
-# AndroidRadioStreamingApp
-Android Radio Streaming App github example by ercan duman
+# dotWavesStreamingApp
+Android Radio Streaming App by eco.varan@42
 
 This Radio application checks internet connection as well. If there is no connection, it shows some TOAST message such as:
 
@@ -16,14 +16,10 @@ And seekbar listens device volume button's events, when volume down pressed the 
 
 This app plays stream urls from the internet, with this basic idea, if you like, you can add more radio stations...
 
-You can try/test it with this apk file [ here](https://www.dropbox.com/s/r9y0597vkhk9k3w/Android%20Radio%20Streaming%20App%20by%20ercanduman.zip?dl=0)
 
-Hope it helps someone :+1: :) If you want to see some real project I have created with android radio streaming, 
-please have a look on my android [RadiOom ]( https://play.google.com/store/apps/details?id=ercanduman.radioom&hl=en) application.
+______________________________________________________________________________
+linges@42
 
+Tech Evangelist / Hopeful Android-IOS Dev
 
-Ercan DUMAN
-
-Computer engineer, Android Developer
-
-For more android apps [visit](https://play.google.com/store/search?q=ercanduman)
+For more android apps [visit](https://play.google.com/store/search?q=42.my)
